@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+  <project name="test" type="microservice" path="projects/test">
+    <bootstrap>
+      <db-migrations />
+      <start />
+    </bootstrap>
+    <resources>
+      <load_from_folder pattern="resource/*.resource" />
+    </resources>
+    <storages>
+      <load_from_folder pattern="storage/*.storage" />
+    </storages>
+    <endpoints>
+      <load_from_app_folders />
+    </endpoints>
+  </project>
+</projects>
+
